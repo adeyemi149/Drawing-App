@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&family=Poppins:wght@400;500;600;700&display=swap');
+
+@import url(/Count-Timer/normalize.css);
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/*Typography*/
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-size: cover;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 2.4rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+p {
+    margin: 0;
+    font-size: 2rem;
+}
+
+@media screen and (min-width: 760px) {
+    h1 {
+        font-size: 4rem;
+    }
+}
+
+canvas {
+    border: 5px solid rebeccapurple;
+}
+
+.tool--box {
+    width: 510px;
+    background: rebeccapurple;
+    padding: 1rem;
+    border-radius: 0 0 5px 5px;
+}
+
+.tool--box > * {
+    border: none;
+    padding: 0.5rem;
+    width: 45px;
+    border-radius: 5px;
+    background: white;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.tool--box input {
+    height: 3.6rem;
+}
+
+.tool--box > *:last-child {
+    width: 75px;
+    margin-right: auto;
+}
